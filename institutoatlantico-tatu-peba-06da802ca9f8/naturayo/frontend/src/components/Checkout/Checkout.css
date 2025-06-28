@@ -1,0 +1,77 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw; /* ocupa toda a largura */
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+
+.form-section {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.form-block {
+  flex: 1;
+}
+
+.form-block h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 16px;
+  background-color: #e9e3e3;
+  color:  #000;
+  border: none;
+  border-radius: 4px;
+}
+
+.inline-group {
+  display: flex;
+  gap: 16px;
+}
+
+.inline-group > div {
+  flex: 1;
+}
+
+.validade {
+  display: flex;
+  gap: 8px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ccc;
+}
+
+.btn-comprar {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #a8e51c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
