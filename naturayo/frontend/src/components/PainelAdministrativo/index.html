@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo de E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin E-Commerce</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Dashboard</h1>
+        <div>
+          <button id="toggle-theme">Alternar Tema</button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Vendas Hoje</h3>
+          <p>xxxxxx</p>
+        </div>
+        <div class="card">
+          <h3>Pedidos</h3>
+          <p>xxxxx</p>
+        </div>
+        <div class="card">
+          <h3>Novos Clientes</h3>
+          <p>xxxx</p>
+        </div>
+        <div class="card">
+          <h3>Produtos em Estoque</h3>
+          <p>xxxx</p>
+        </div>
+        <div class="card">
+          <h3></h3>
+        </div>
+      </section>
+
+      <section class="chart-section">
+  <h2>Vendas Mensais</h2>
+  <canvas id="salesChart" width="400" height="150"></canvas>
+</section>
+
+<section class="filter-section">
+  <h2>Filtrar Pedidos</h2>
+  <input type="text" id="filterInput" placeholder="Buscar por cliente" />
+  <input type="text" id="filterDate">
+  <select  id="fiterStatus">
+    <option value=""></option>
+    <option value="Entregue"></option>
+    <option value="Pendente"></option>
+    <option value="Cancelado"></option>
+  </select>
+</section>
+ 
+      <section class="table-section">
+        <h2>Pedidos Recentes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Produto</th>
+              <th>Status</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>xxxxxx</td>
+              <td>xxxxxx</td>
+              <td><span class="status entregue">Entregue</span></td>
+              <td>xxxxx</td>
+            </tr>
+            <tr>
+              <td>xxxxxx </td>
+              <td>xxxxxx</td>
+              <td><span class="status pendente">Pendente</span></td>
+              <td>xxxxx</td>
+            </tr>
+            <tr>
+              <td>xxxxxx</td>
+              <td>xxxxxx</td>
+              <td><span class="status cancelado">Cancelado</span></td>
+              <td>xxxxx</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="chart-section">
+        <!--exemplo-->
+        <h2>Produtos mais vendidos!</h2>
+        <canvas id="ProdutosMaisVendidosChart" width="400" height="200"></canvas>
+
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</html>

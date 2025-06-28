@@ -1,0 +1,71 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-container h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.modal-container p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-cadastrar,
+.btn-login {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  border-radius: 999px; 
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-cadastrar {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-cadastrar:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-login {
+  background-color: #cc4d00;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #b84300;
+}
